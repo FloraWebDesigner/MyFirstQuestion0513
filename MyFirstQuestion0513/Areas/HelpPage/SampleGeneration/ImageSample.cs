@@ -1,6 +1,6 @@
 using System;
 
-namespace MyFirstQuestion0513.Areas.HelpPage
+namespace Flora_Assignment1.Areas.HelpPage
 {
     /// <summary>
     /// This represents an image sample on the help page. There's a display template named ImageSample associated with this class.

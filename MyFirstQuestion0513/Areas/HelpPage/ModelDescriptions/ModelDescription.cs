@@ -1,6 +1,6 @@
 using System;
 
-namespace MyFirstQuestion0513.Areas.HelpPage.ModelDescriptions
+namespace Flora_Assignment1.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

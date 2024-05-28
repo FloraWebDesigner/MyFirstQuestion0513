@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace MyFirstQuestion0513.Areas.HelpPage
+namespace Flora_Assignment1.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

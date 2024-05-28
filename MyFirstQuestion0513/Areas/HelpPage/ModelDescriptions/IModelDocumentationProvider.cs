@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace MyFirstQuestion0513.Areas.HelpPage.ModelDescriptions
+namespace Flora_Assignment1.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

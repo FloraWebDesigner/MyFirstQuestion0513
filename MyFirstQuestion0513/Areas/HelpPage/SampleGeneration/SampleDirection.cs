@@ -1,4 +1,4 @@
-namespace MyFirstQuestion0513.Areas.HelpPage
+namespace Flora_Assignment1.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

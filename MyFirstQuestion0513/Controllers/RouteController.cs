@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace MyFirstQuestion0513.Controllers
+namespace Flora_Assignment1.Controllers
 {
     public class RouteController : ApiController
     {
@@ -45,7 +45,7 @@ namespace MyFirstQuestion0513.Controllers
         /// "input 1 is {input1} and input is {input2}"
         /// </returns>
         /// <example>
-        /// GET: api/Route/Method4/2/4 -> "input..." 
+        /// GET: api/Route/Method4/2/4 -> "input 2 and 4" 
         /// </example>
         /// 
         [HttpGet]

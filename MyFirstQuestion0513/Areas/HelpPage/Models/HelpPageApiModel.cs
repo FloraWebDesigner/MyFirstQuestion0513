@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using MyFirstQuestion0513.Areas.HelpPage.ModelDescriptions;
+using Flora_Assignment1.Areas.HelpPage.ModelDescriptions;
 
-namespace MyFirstQuestion0513.Areas.HelpPage.Models
+namespace Flora_Assignment1.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

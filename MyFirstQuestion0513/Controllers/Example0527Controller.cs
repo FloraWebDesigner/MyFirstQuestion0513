@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace MyFirstQuestion0513.Controllers
+namespace Flora_Assignment1.Controllers
 {
     public class Example0527Controller : ApiController
     {
@@ -19,7 +19,7 @@ namespace MyFirstQuestion0513.Controllers
             return "My http response!";
         }
         */
-
+        [Route("api/welcome")]
         public string Get()
         {
             string response = "Welcome to HTTP5125";

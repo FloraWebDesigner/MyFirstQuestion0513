@@ -1,6 +1,6 @@
 using System;
 
-namespace MyFirstQuestion0513.Areas.HelpPage
+namespace Flora_Assignment1.Areas.HelpPage
 {
     /// <summary>
     /// This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.

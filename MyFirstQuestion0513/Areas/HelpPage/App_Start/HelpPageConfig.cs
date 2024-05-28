@@ -16,7 +16,7 @@ using System.Web.Http;
 using System.Web.Http.OData;
 #endif
 
-namespace MyFirstQuestion0513.Areas.HelpPage
+namespace Flora_Assignment1.Areas.HelpPage
 {
     /// <summary>
     /// Use this class to customize the Help Page.

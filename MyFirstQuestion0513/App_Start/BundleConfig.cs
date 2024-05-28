@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace MyFirstQuestion0513
+namespace Flora_Assignment1
 {
     public class BundleConfig
     {
