@@ -25,8 +25,8 @@ namespace Flora_Assignment1.Controllers
         [Route("api/AddTen/{id}")]
         public int Question1(int id)
         {
-            int AddTen = id + 10;
-            return AddTen;
+            int addTen = id + 10;
+            return addTen;
         }
 
         /// <summary>
@@ -95,8 +95,8 @@ namespace Flora_Assignment1.Controllers
         [Route("api/NumberMachine/{id}")]
         public int Question5(int id)
         {
-            int NumberMachine = (id + 10) * id / (id - 1);
-            return NumberMachine;
+            int numberMachine = (id + 10) * id / (id - 1);
+            return numberMachine;
         }
 
         /// <summary>
@@ -140,21 +140,21 @@ namespace Flora_Assignment1.Controllers
             //Step 1: get number of fortnight.
 
             int numfortnight = id / 11 + 1;
-            //int Numfortnight = id / 12 + 1;
-            //int Numfortnight = id / 13 + 1;
-            //int Numfortnight = id / 14 + 1;
+            //int numfortnight = id / 12 + 1;
+            //int numfortnight = id / 13 + 1;
+            //int numfortnight = id / 14 + 1;
 
             //step 2: get tax and total value with two decimal.
 
-            double paynight = Math.Round(numfortnight * 5.5,2);
-            double paytax = Math.Round(paynight*0.13, 2);
-            double paytotal = paynight + paytax;
+            double payNight = Math.Round(numfortnight * 5.5,2);
+            double payTax = Math.Round(payNight*0.13, 2);
+            double payTotal = payNight + payTax;
 
             //step 3: change night price, tax and total price to string.
 
-            String Price_night = String.Format("{0:0.00}", paynight);
-            String Price_tax = String.Format("{0:0.00}", paytax);
-            String Price_total = String.Format("{0:0.00}", paytotal);
+            String Price_night = String.Format("{0:0.00}", payNight);
+            String Price_tax = String.Format("{0:0.00}", payTax);
+            String Price_total = String.Format("{0:0.00}", payTotal);
 
             //step 4: return as requested.
 

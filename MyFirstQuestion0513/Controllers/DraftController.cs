@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace Flora_Assignment1.Controllers
 {
-    public class Example0527Controller : ApiController
+    public class DraftController : ApiController
     {
         // we have ability to listen for http requests
         // and provide responses to these requests

@@ -10,6 +10,43 @@ namespace Flora_Assignment1.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "value3", "value4" };
+        }
+
+        // GET api/values/5
+        //input: integer
+        //output: the next four integers after the input
+        public IEnumerable<int> Get(int id)
+        {
+            return new int[] { id, id + 2, id / 2, id * 2 };
+        }
+
+        // POST api/values
+        public void Post([FromBody] string value)
+        {
+        }
+
+        // PUT api/values/5
+        public void Put(int id, [FromBody] string value)
+        {
+        }
+
+        // DELETE api/values/5
+        public void Delete(int id)
+        {
+        }
+    }
+}
+
+
+
+
+
+public class ValuesController : ApiController
+    {
+        // GET api/values
         // This is my code.
         /*
          * This
@@ -44,4 +81,4 @@ namespace Flora_Assignment1.Controllers
         {
         }
     }
-}
+
