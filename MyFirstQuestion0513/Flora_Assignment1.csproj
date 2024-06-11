@@ -156,11 +156,17 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\Assignment1_FloraController.cs" />
+    <Compile Include="Controllers\Assignment2_FloraController.cs" />
     <Compile Include="Controllers\DraftController.cs" />
     <Compile Include="Controllers\ExampleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InfiniteController.cs" />
+    <Compile Include="Controllers\Practice0601Controller.cs" />
+    <Compile Include="Controllers\Practice0609Controller.cs" />
     <Compile Include="Controllers\RouteController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\Week5Controller.cs" />
+    <Compile Include="Controllers\Week6Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -231,6 +237,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Season.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

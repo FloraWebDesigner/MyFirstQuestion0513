@@ -14,5 +14,15 @@ namespace Flora_Assignment1.Controllers
 
             return View();
         }
+
+        //Home/Season
+        public ActionResult Season(int? num) 
+        {
+            if(num == null) {
+                ViewBag.Temp = "Unknown";
+                    }
+            else ViewBag.Temp = num;
+            return View();
+        }
     }
 }
