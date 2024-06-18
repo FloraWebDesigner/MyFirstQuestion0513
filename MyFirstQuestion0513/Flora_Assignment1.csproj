@@ -157,10 +157,13 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\Assignment1_FloraController.cs" />
     <Compile Include="Controllers\Assignment2_FloraController.cs" />
+    <Compile Include="Controllers\J1Controller.cs" />
     <Compile Include="Controllers\DraftController.cs" />
     <Compile Include="Controllers\ExampleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InfiniteController.cs" />
+    <Compile Include="Controllers\J2Controller.cs" />
+    <Compile Include="Controllers\J3Controller.cs" />
     <Compile Include="Controllers\Practice0601Controller.cs" />
     <Compile Include="Controllers\Practice0609Controller.cs" />
     <Compile Include="Controllers\RouteController.cs" />

@@ -100,7 +100,7 @@ namespace MyFirstQuestion0513.Controllers
         [HttpGet]
         [Route("api/2018J3/Distance/{city1}/{city2}/{city3}/{city4}")]
         ///<summary>
-        ///receives 4 positive integers less than 1000, each representing the distances between consecutive pairs of consecutive cities and output 5 lines, with the ith line (1  i  5) containing the distance from city i to cities 1, 2, ... 5 in order, separated by one space.
+        ///receives 4 positive integers less than 1000, each representing the distances between consecutive pairs of consecutive cities and output 5 lines, with the ith line (1 <= i <= 5) containing the distance from city i to cities 1, 2, ... 5 in order, separated by one space.
         /// </summary>
         /// <param1 name=city1>the distances between city1 and its consecutive pairs of consecutive cities</param1>
         /// <param2 name=city2>the distances between city2 and its consecutive pairs of consecutive cities</param2>
