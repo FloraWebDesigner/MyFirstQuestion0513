@@ -104,7 +104,7 @@ namespace Flora_Assignment1.Controllers
         /// </summary>
         /// <param name="id">a number to input</param>
         /// <returns>
-        /// 1. how many nights the client spent.
+        /// 1. how many forty nights the client spent.
         /// 2. how much is the price for hosting nights.
         /// 3. how much is the tax.
         /// 4. how much is the total price.

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -19,10 +20,10 @@ namespace MyFirstQuestion0513.Controllers
             int i = 1;
             while (i <= 25)
             {
-                message=message+i.ToString()+",";
+                message = message + i.ToString() + ",";
                 i++;
             }
-            return message; 
+            return message;
         }
 
 
@@ -34,7 +35,7 @@ namespace MyFirstQuestion0513.Controllers
             string message = "";
             for (int i = 1; i <= 25; i++)
             {
-                message=message+i.ToString()+",";
+                message = message + i.ToString() + ",";
             }
             return message;
         }
@@ -91,7 +92,7 @@ namespace MyFirstQuestion0513.Controllers
         public string C3If()
         {
             string message = "";
-            for (int i = -20; i <= -10; i=i+2)
+            for (int i = -20; i <= -10; i = i + 2)
             {
                 message = message + i.ToString() + ",";
             }
@@ -103,12 +104,12 @@ namespace MyFirstQuestion0513.Controllers
         [Route("api/studywhile4")]
         public string C4While()
         {
-            string[] movies = {"movie1", "movie2", "movie3", "movie4", "movie5"};
+            string[] movies = { "movie1", "movie2", "movie3", "movie4", "movie5" };
             string message = "";
             int i = 0;
-            while (i <=4)
+            while (i <= 4)
             {
-                message = message + movies[i]+",";
+                message = message + movies[i] + ",";
                 i++;
             }
             return message;
@@ -120,12 +121,12 @@ namespace MyFirstQuestion0513.Controllers
         [Route("api/studyif4")]
         public string C4If()
         {
-            string[] movies = { "movie1", "movie2", "movie3", "movie4", "movie5","movie6"};
+            string[] movies = { "movie1", "movie2", "movie3", "movie4", "movie5", "movie6" };
             string message = "";
-            for (int i = 0; i <= movies.Length-1; i = i + 1)
+            for (int i = 0; i <= movies.Length - 1; i = i + 1)
             {
                 string ending = ",";
-                if (i == movies.Length-1)
+                if (i == movies.Length - 1)
                 {
                     ending = ".";
                 }
@@ -141,9 +142,9 @@ namespace MyFirstQuestion0513.Controllers
             List<string> movie = new List<string>() { "movie4", "movie3", "movie2", "movie1" };
             string message = "";
             int i = 0;
-            while (i<= movie.Count-1)
+            while (i <= movie.Count - 1)
             {
-                message = message + movie[i]+",";
+                message = message + movie[i] + ",";
             }
             return message;
         }
@@ -153,9 +154,9 @@ namespace MyFirstQuestion0513.Controllers
         public string C6If()
         {   // read-only, no access to the array 
             IEnumerable<string> movies = new string[] { "movie2", "movie3" };
-            string message="";
+            string message = "";
             int i = 0;
-            foreach(string movie in movies)
+            foreach (string movie in movies)
             {
                 if (i == (movies.Count() - 1)) ;
                 message = message + movie;
@@ -171,32 +172,32 @@ namespace MyFirstQuestion0513.Controllers
         [HttpGet]
         [Route("api/w3/q1")]
         public string Q1()
-        { 
+        {
             string message = "";
-            for(int i = 1; i<=10; i++)
+            for (int i = 1; i <= 10; i++)
             {
-                message = message+i.ToString();
+                message = message + i.ToString();
             }
             return message;
         }
         [HttpGet]
         [Route("api/w3/q3/{num1}/{num2}/{num3}")]
-        public string Q2(int num1,int num2, int num3)
+        public string Q2(int num1, int num2, int num3)
         {
-            int sum = num1+num2+num3;
-            int average = (int)(sum/3);
-            return "The sum of the number is "+sum+" and the average is "+average+" .";
+            int sum = num1 + num2 + num3;
+            int average = (int)(sum / 3);
+            return "The sum of the number is " + sum + " and the average is " + average + " .";
         }
 
         [HttpGet]
         [Route("api/w3/q5")]
         public string Q5()
         {
-            List<string>price = new List<string>() {"apple","banana","cherry"};
+            List<string> price = new List<string>() { "apple", "banana", "cherry" };
             string message = "";
-            for(int i = 0;i<=(price.Count()-1); i++)
+            for (int i = 0; i <= (price.Count() - 1); i++)
             {
-                message = message + price[i].ToString()+" ";
+                message = message + price[i].ToString() + " ";
             }
             return message;
         }
@@ -206,13 +207,13 @@ namespace MyFirstQuestion0513.Controllers
         [Route("api/w3/q6")]
         public string Q6()
         {
-            IEnumerable<string>fruitList =new string[]{ "apple", "banana", "cherry" };
+            IEnumerable<string> fruitList = new string[] { "apple", "banana", "cherry" };
             string message = "";
             int i = 0;
             foreach (string fruit in fruitList) ;
             {
-                if (i == (fruitList.Count() - 1));
-                    message = message + fruitList;
+                if (i == (fruitList.Count() - 1)) ;
+                message = message + fruitList;
             }
             return message;
         }
@@ -226,10 +227,10 @@ namespace MyFirstQuestion0513.Controllers
             string message = "";
             for (i = 0; i < 10; i++)
             {
-                message = message + num.ToString() + " x " + i.ToString() +" = "+num*i ;
+                message = message + num.ToString() + " x " + i.ToString() + " = " + num * i;
             }
 
-            return(message); 
+            return (message);
 
         }
 
@@ -246,7 +247,7 @@ namespace MyFirstQuestion0513.Controllers
 
             }
             return message;
-           
+
 
         }
 
@@ -261,7 +262,7 @@ namespace MyFirstQuestion0513.Controllers
             {
                 for (int j = 1; j <= i; j++)
                 {
-                    message = message+"*";
+                    message = message + "*";
                 }
                 message = message + "/";
             }
@@ -278,10 +279,10 @@ namespace MyFirstQuestion0513.Controllers
             string deliminator = ",";
             for (int i = end; i >= start; i--)
             {
-                if (i == end) deliminator = ".";
-                message = message + i+deliminator;
+                if (i == start) deliminator = ".";
+                message = message + i + deliminator;
             }
-            message = message.Trim(new char[] { ','});
+            // message = message.Trim(new char[] { ','});
             message = message.Trim(new char[] { '.' });
             return message;
         }
@@ -297,65 +298,70 @@ namespace MyFirstQuestion0513.Controllers
         {
             int sum = 0;
             string message = "";
-            for (int i = 2; i <=num*2; i+=2)
+            for (int i = 2; i <= num * 2; i += 2)
             {
-                
+
                 sum += i;
-                message = message + i+" ";
+                message = message + i + " ";
             }
-            return message+" total is "+sum;
+            return message + " total is " + sum;
         }
 
         //message = message.Trim(new char[] {','});
 
         [HttpGet]
         [Route("api/array")]
-        public string Q8() {
+        public string Q8()
+        {
             List<string> color = new List<string> { "red", "blue", "green", "black" };
             color.Add("yellow");
             color.Add("white");
             string message = "";
             string clean = ",";
-            foreach(string s in color)
+            foreach (string s in color)
             {
                 message += s + clean;
 
             }
             return message;
-                
-                }
+
+        }
 
         [HttpGet]
         [Route("api/step/{num}")]
-        public string Q9(int num) {
+        public string Q9(int num)
+        {
             string message = "";
-            for (int i = 0; i <= 20/num; i++) { 
-            message += -10+num*i+" ";
+            for (int i = 0; i <= 20 / num; i++)
+            {
+                message += -10 + num * i + " ";
             }
             return message;
         }
 
         [HttpGet]
         [Route("api/color")]
-        public string Q10() {
+        public string Q10()
+        {
             string[] color = new string[] { "red", "blue", "green" };
             string message = "";
-            foreach(string s in color)
+            foreach (string s in color)
             {
-                message+= s + " ";
+                message += s + " ";
             }
             return message;
-                }
+        }
 
         [HttpGet]
         [Route("api/split/{message}")]
-        public string Q11(string message) {
+        public string Q11(string message)
+        {
             string output = "";
             string ending = ",";
 
-            foreach(char s in message)
+            foreach (char s in message)
             {
-                if (s == message.Count()-1) 
+                if (s == message.Count() - 1)
                 {
                     ending = ".";
                 }
@@ -446,87 +452,302 @@ namespace MyFirstQuestion0513.Controllers
         //https://cemc.math.uwaterloo.ca/contests/computing/past_ccc_contests/2020/ccc/juniorEF.pdf
 
         [HttpGet]
-        [Route("api/art/5/{x1,y1}/{x2,y2}/{x3,y3}/{x4,y4}/{x5,y5}")]
-        public string art(int x1, int x2, int x3, int x4, int x5, int y1, int y2, int y3, int y4, int y5)
+        [Route("api/art/{x1}/{y1}/{x2}/{y2}/{x3}/{y3}/{x4}/{y4}/{x5}/{y5}")]
+        public IEnumerable<string> art(int x1, int x2, int x3, int x4, int x5, int y1, int y2, int y3, int y4, int y5)
         {
             int[] x = { x1, x2, x3, x4, x5 };
             int[] y = { y1, y2, y3, y4, y5 };
 
-            int maxX = 0;
-            for (int i = 0; i < x.Length; i++)
+            int maxX = x1;
+            for (int i = 1; i < x.Length; i++)
             {
                 maxX = Math.Max(maxX, x[i]);
             }
-            int indexMaxX = Array.IndexOf(x, maxX);
+            maxX = maxX + 1;
+            //   int indexMaxX = Array.IndexOf(x, maxX);
 
-            int minX = 0;
-            for (int i = 0; i < x.Length; i++)
+            int minX = x1;
+            for (int i = 1; i < x.Length; i++)
             {
                 minX = Math.Min(minX, x[i]);
             }
-            int indexMinX = Array.IndexOf(x, minX);
+            //  int indexMinX = Array.IndexOf(x, minX);
+            minX = minX - 1;
 
-            int maxY = 0;
-            for (int i = 0; i < x.Length; i++)
+            int maxY = y1;
+            for (int i = 1; i < y.Length; i++)
             {
                 maxY = Math.Max(maxY, y[i]);
             }
-            int indexMaxY = Array.IndexOf(x, maxY);
+            maxY = maxY + 1;
+            //   int indexMaxY = Array.IndexOf(x, maxY);
 
-            int minY = 0;
-            for (int i = 0; i < x.Length; i++)
+            int minY = y1;
+            for (int i = 1; i < y.Length; i++)
             {
-                maxY = Math.Min(minY, y[i]);
+                minY = Math.Min(minY, y[i]);
             }
-            int indexMinY = Array.IndexOf(x, minY);
-            string art = minX + " , " + minY + " ; " + maxX + " , " + maxY;
-            return art;
-
-
-
-            /*
-            int maxX = Math.Max(Math.Max(x1, x2), Math.Max(x3, x4));
-            maxX = Math.Max(maxX, x5);
-            int minX = Math.Min(Math.Min(x1, x2), Math.Min(x3, x4));
-            minX = Math.Min(minX, x5);
-            int maxY = Math.Max(Math.Max(y1, y2), Math.Max(y3, y4));
-            maxY = Math.Max(maxY, y5);
-            int minY = Math.Min(Math.Min(y1, y2), Math.Min(y3, y4));
-            minY = Math.Min(minY, y5);
-            */
-
+            minY = minY - 1;
+            //   int indexMinY = Array.IndexOf(x, minY);
+            //string art = minX.ToString() + " , " + minY.ToString() + " ; " + maxX.ToString()+ " , " + maxY.ToString();
+            return new string[] { minX.ToString() + "," + minY.ToString(), maxX.ToString() + "," + maxY.ToString() };
         }
+
+
+
+        [HttpGet]
+        [Route("api/transparent/{s}")]
+        public bool result(string s)
+        {
+            List<int> smallOpen = new List<int>();
+            List<int> smallClose = new List<int>();
+            List<int> midOpen = new List<int>();
+            List<int> midClose = new List<int>();
+            List<int> largeOpen = new List<int>();
+            List<int> largeClose = new List<int>();
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(') smallOpen.Add(i);
+                if (s[i] == ')') smallClose.Add(i);
+                if (s[i] == '[') midOpen.Add(i);
+                if (s[i] == ']') midClose.Add(i);
+                if (s[i] == '{') largeOpen.Add(i);
+                if (s[i] == '}') largeClose.Add(i);
+            }
+            if ((smallOpen.Count != smallClose.Count) || (midOpen.Count != midClose.Count) || (largeOpen.Count != largeClose.Count))
+            { return false; }
+            else
+            {
+                for (int i = 0; i < smallOpen.Count; i++)
+                {
+                    if (smallOpen[i] > smallClose[i])
+                    {
+                        return false;
+                    }
+                }
+                for (int i = 0; i < largeOpen.Count; i++)
+                {
+                    if (largeClose[i] < largeOpen[i])
+                    {
+                        return false;
+                    }
+                }
+                for (int i = 0; i < midClose.Count; i++)
+                {
+                    if (midOpen[i] > midClose[i])
+                    {
+                        return false;
+                    }
+                }
+                return true;
+
+            }
+        }
+
+
+        [HttpGet]
+        [Route("api/dup/{input}")]
+        public List<int> removeDup(string input)
+        {
+            int[]num = input.Split(',').Select(s => int.Parse(s)).ToArray(); ;
+            int dup = 0;
+            List<int>noDuplicate = new List<int>();
+            string message = "";
+            Array.Sort(num);
+            for(int i = 0;i<num.Length;i++)
+            {
+                int tempDup = 0;
+                for (int j = i + 1; j < num.Length; j++)
+                {
+                    
+                    if (num[i] == num[j])
+                    {
+                        tempDup += 1;
+                    }
+                }
+                
+                    if(tempDup!=0) { dup++; }
+                    else { noDuplicate.Add(num[i]); }
+                    
+                }
+            noDuplicate.Add(dup);
+            return noDuplicate;
+        }
+
+        [HttpGet]
+        [Route("api/numPlusOne/{input}")]
+        public int[] PlusOne(string input)
+        {
+            string[] digits = input.Split(',').ToArray();
+
+            string message = "";
+            for (int i = 0; i < digits.Length; i++)
+            {
+                message += digits[i];
+            }
+            int plusOne = Int32.Parse(message) + 1;
+            string plusStr = plusOne.ToString();
+
+            string[] plusArr = new string[plusStr.Length];
+            int j = 0;
+            while (j < plusStr.Length)
+            {
+                plusArr[j] = plusStr[j].ToString();
+                j++;
+            }
+            int[] output = plusStr.Select(n => int.Parse(n.ToString())).ToArray();
+            return output;
+        }
+
+
+    }
+        
+        
+
+
+
+
+
+
+
+
     }
 
 
-}
-
         /*
-         * 
-         *  IEnumerable<string> movies = new string[] { "movie2", "movie3" };
-            string message="";
-            int i = 0;
-            foreach(string movie in movies)
+            
+            //s = s.Replace("()",string.Empty);
+            //s = s.Replace("[]",string.Empty);
+            //s = s.Replace("{}",string.Empty);
+            int sLeft = 0;
+            int sRight = 0;
+            int mLeft = 0;
+            int mRight = 0;
+            int lLeft = 0;
+            int lRight = 0;
+            foreach (var c in s)
             {
-                if (i == (movies.Count() - 1)) ;
-                message = message + movie;
+                if (c == '(') sLeft++;
+                if (c == ')') sRight++;
+                if (c == '[') mLeft++;
+                if (c == ']') mRight++;
+                if (c == '{') lLeft++;
+                if (c == '}') lRight++;
             }
-            return message;
-
-                [HttpGet]
-                [Route("api/w3/q4")]
-                public static void main()        
+            if ((sLeft != sRight) || (mLeft != mRight) || (lLeft != lRight)) { return s; }
+            else
+            {
+                for (int i = 0; i < s.Length; i++)
                 {
-                    int ctr;
-                    Console.WriteLine("Input number of terms: ");
-                    ctr = Convert.ToInt32(Console.ReadLine());
-                    for (int i = 1; i <= 5; i++)
+                    if ((s[i] == '(') && (s.IndexOf(')') > i))
                     {
-                        Console.Write("numer is {0} and the cube of {1} is {2}", i, i, i * i * i);
+                        s.Replace(s[i],'d');
+                        s.Replace(Convert.ToChar(s.IndexOf(')')), 'd');
+                    }
+                    if ((s.IndexOf('[') == i) && (s.IndexOf(']') > i))
+                    {
+                        s.Replace(s[i], 'd');
+                        s.Replace(Convert.ToChar(s.IndexOf(']')), 'd');
+                    }
+                    if ((s.IndexOf('[') == i) && (s.IndexOf(']') > i))
+                    {
+                        s.Replace(s[i], 'd');
+                        s.Replace(Convert.ToChar(s.IndexOf(']')), 'd');
                     }
                 }
+                s.Replace('d','a');
+                return s;
+            }
+        }
 
         */
+
+        /*
+
+            //J4 2018
+        [HttpGet]
+        [Route("api/sunflower/{string}")]
+        public string rotate(string input)
+        {
+            int[] inputArr = input.Split(',').Select(s => int.Parse(s)).ToArray();
+            string message = "";
+        //    string newMessage = "";
+            string lastCol = "";
+            int squareNum = ((int)Math.Sqrt(inputArr.Length - 1));
+        //    int rotate = (inputArr[0] + 2)%4;
+            for (int i = 0; i < squareNum; i++)
+            {
+                if (i == 0)
+                {
+                    for (int j = 0; j < squareNum; j++)
+                    {
+                        message = message + inputArr[j + 1] + ",";
+                    }
+                }
+                else if (i != squareNum - 1)
+                {
+                    for (int j = 1; j <= (squareNum - 2); j++)
+                    {
+                        message = message + inputArr[squareNum * (j + 1) + 1] + ",";
+                        lastCol = message + inputArr[j * squareNum + 1] + ",";
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < squareNum; j++)
+                    {
+                        message = message + inputArr[(squareNum - 1) * squareNum + j + 1];
+                    }
+                }
+                for (int j = lastCol.Length - 1; j >= 0; j--)
+                {
+                    message = message + lastCol[j];
+                }
+            }
+           
+            return message;
+        }
+
+        */
+        /*
+
+int position = 0;
+if (rotate == 0) {position=0; }
+else if (rotate == 1) { position = squareNum; }
+else if (rotate == 2) {  position = squareNum*2; }
+else if(rotate == 3) { position = squareNum*3; }
+
+                    List<int>flower=new List<int>();
+            for (int i = 1; i < inputArr.Length;i++)
+            {
+                flower[i-1] = inputArr[i];
+            }
+*/
+
+
+        /*
+        int maxX = Math.Max(Math.Max(x1, x2), Math.Max(x3, x4));
+        maxX = Math.Max(maxX, x5);
+        int minX = Math.Min(Math.Min(x1, x2), Math.Min(x3, x4));
+        minX = Math.Min(minX, x5);
+        int maxY = Math.Max(Math.Max(y1, y2), Math.Max(y3, y4));
+        maxY = Math.Max(maxY, y5);
+        int minY = Math.Min(Math.Min(y1, y2), Math.Min(y3, y4));
+        minY = Math.Min(minY, y5);
+        */
+
+
+
+
+
+
+    
+
+
+
+
+
 
 
 

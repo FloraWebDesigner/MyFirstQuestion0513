@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "shop for summer";
+}
+
+<h2>Shop our @DateTime.Now.ToString("MMMM") @DateTime.Now.ToString("yyyy") collection</h2>
+
+<!--How many sunglasses and beach towels would you like?-->
+<form action="Checkout" method="post">
+    <div>
+        <label>Sunglasses</label>
+        <input type="number" id="GlassNum" name="GlassNum"/>
+    </div>
+    <div>
+        <label>Towels</label>
+        <select name="TowelSize">
+            <option value="S">Small($10)</option>
+            <option value="L">Large($15)</option>
+        </select>
+    </div>
+    <label>Name:</label>
+    <div><input type="text" name="CustomerName"</div>
+    <div>
+        <input type="submit" value="Order Now" />
+    </div>
+
+</form>

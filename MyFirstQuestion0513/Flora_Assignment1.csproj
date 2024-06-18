@@ -164,9 +164,11 @@
     <Compile Include="Controllers\Practice0601Controller.cs" />
     <Compile Include="Controllers\Practice0609Controller.cs" />
     <Compile Include="Controllers\RouteController.cs" />
+    <Compile Include="Controllers\SummerStoreController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\Week5Controller.cs" />
     <Compile Include="Controllers\Week6Controller.cs" />
+    <Compile Include="Controllers\HostingCostController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -238,6 +240,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Season.cshtml" />
+    <Content Include="Views\SummerStore\Products.cshtml" />
+    <Content Include="Views\SummerStore\Index.cshtml" />
+    <Content Include="Views\SummerStore\Checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
